@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toplama ortalma</title>
+</head>
+<body>
+    <form action="">
+        <label for="1">1</label>
+        <input id="1" type="number" required="required">
+        <br>
+        <label for="2">2</label>
+        <input id="2" type="number" required="required">
+        <br>
+        <label for="3">3</label>
+        <input id="3" type="number" required="required">
+        <br>
+        <label for="4">4</label>
+        <input id="4" type="number" required="required">
+        <br>
+        <label for="5">5</label>
+        <input id="5" type="number" required="required">
+        <br>
+        <input type="button" id="btnTopla" value="TOPLA ORTALAMSINI BUL">
+    </form>
+    <div id="toplamSayi"></div>
+    <div id="ortalama"></div>
+
+</body>
+</html>
+<script>
+    var btn=document.getElementById("btnTopla");
+    btn.onclick=function(){
+        var sayi1=Number(document.getElementById("1").value);
+        var sayi2=Number(document.getElementById("2").value);
+        var sayi3=Number(document.getElementById("3").value);
+        var sayi4=Number(document.getElementById("4").value);
+        var sayi5=Number(document.getElementById("5").value);
+        var toplam=sayi1+sayi2+sayi3+sayi4+sayi5;
+        document.getElementById("toplamSayi").innerHTML="Girilen Sayıların Toplamı : "+toplam;
+
+        var ortalama = toplam / 5;
+    
+        document.getElementById("ortalama").innerHTML="Girilen Sayıların ortalaması : "+ortalama;
+    }
+</script>

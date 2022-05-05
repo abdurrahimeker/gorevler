@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>çarpma</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let sayi1 = prompt("bir sayı giriniz:");
+    if (sayi1 === 0) {
+        let carpim = sayi2 * sayi3 * sayi4 * sayi5;
+        document.write(carpim);
+    }else{
+        let sayi2 = prompt("bir sayı giriniz:");
+        if (sayi2 === 0) {
+            let carpim = sayi1 * sayi3 * sayi4 * sayi5;
+            document.write(carpim);
+        }else{
+            let sayi3 = prompt("bir sayı giriniz:");
+            if (sayi3 === 0) {
+                let carpim = sayi2 * sayi1 * sayi4 * sayi5;
+                document.write(carpim);
+            }else{
+                    let sayi4 = prompt("bir sayı giriniz:");
+                if (sayi4 === 0) {
+                    let carpim = sayi2 * sayi3 * sayi1 * sayi5;
+                    document.write(carpim);
+                }else{
+                    let sayi5 = prompt("bir sayı giriniz:");
+                    if (sayi5 === 0) {
+                        let carpim = sayi2 * sayi3 * sayi4 * sayi1;
+                        document.write(carpim);
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+
+</script>

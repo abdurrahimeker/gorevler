@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ebob hesabı</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let sayi1 = prompt("birinci sayıyı giriniz.");
+    let sayi2 = prompt("ikinci sayıyı giriniz.");
+
+    function obebBul(a, b) {
+        let obeb;
+
+        if(a > b){
+            obeb = b;
+        }else{
+            obeb = a;
+        }
+
+        while (a % obeb != 0 || b % obeb != 0) {
+            obeb--;
+        }
+        return obeb;
+    }
+
+    document.write(obebBul(sayi1,sayi2));
+</script>

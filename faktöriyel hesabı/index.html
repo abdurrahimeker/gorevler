@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>faktöriyel</title>
+</head>
+<body>    
+<script>
+let sayi = prompt("sayı giriniz.");
+let faktoriyel = 1;
+if(sayi < 0) {
+    alert("Lütfen pozitif bir tamsayı giriniz!")
+} else{
+for(let i = 1; i <= sayi; i++){
+    faktoriyel = faktoriyel * i;
+}
+document.write("Faktöriyel : " + faktoriyel);
+}
+</script>
+</body>
+</html>

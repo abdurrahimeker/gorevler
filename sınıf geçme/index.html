@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sınıf geçme</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var sinav1 = prompt("birinci sınav notunu giriniz:");
+    var sinav2 = prompt("ikinci sınav notunu giriniz:");
+
+    if(sinav1 > 100 || sinav2 > 100){
+        alert("notları kontrol ediniz");
+    }else{
+        var toplam = sinav1 + sinav2;
+        var ortalama = toplam / 2; 
+
+        if(ortalama >= 45){
+            document.write("sınavı geçtiniz");
+        }else{
+            document.write("sınavdan kaldınız");
+        }
+    }
+
+</script>

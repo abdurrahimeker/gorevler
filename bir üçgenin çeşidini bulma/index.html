@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>üçgen</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    var kenar1 = prompt("birinci kenar uzunluğunu giriniz:");
+    var kenar2 = prompt("ikinci kenar uzunluğunu giriniz:");
+    var kenar3 = prompt("üçüncü kenar uzunluğunu giriniz:");
+        
+    if(kenar1 == kenar2 && kenar2 == kenar3) {
+        document.write("eşkenar üçgen");
+    }else if(kenar1 == kenar2){
+        document.write("ikizkenar üçgen");
+    }else if(kenar2 == kenar3){
+        document.write("ikizkenar üçgen");
+    }else if(kenar1 == kenar3){
+        document.write("ikizkenar üçgen");
+    }else{
+        document.write("çeşitkenar üçgen");
+    }
+    
+</script>
