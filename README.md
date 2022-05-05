@@ -1,3 +1,3 @@
 # gorevler
-gorevler
-bunklar gökhan abinin verdiği ödevler
+
+bunlar gökhan abinin verdiği ödevler
