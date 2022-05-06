@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#img{
+    margin: auto;
+    margin-top:200px;
+    height: 116px;
+    width: auto;
+    text-align: center;
+}
+#box1{
+    background-color: rgb(237, 237, 237);
+    margin: auto;
+    margin-top:10px;
+    height: 75px;
+    width:auto;
+}
+#box2{
+    background-color: rgb(162, 212, 243);
+    margin-top:5px;
+    height: 75px;
+    width:35%;
+    text-align: center;
+    padding-top:15px;
+}
+#box3{
+    background-color: rgb(162, 212, 243);
+    margin-top:-90px;
+    height: 90px;
+    width:35%;
+    float: right;
+    text-align: center;
+
+}
+#box4{
+    background-color: rgb(162, 212, 243);
+    margin:auto;
+    margin-top:-90px;
+    height: 80px;
+    width:29.5%;
+    text-align: center;
+    padding-top: 10px;
+
+}
+#search{
+    margin: auto;
+    margin-top:10px;
+    height: 75px;
+    width:auto;
+    text-align: center;
+}
+#search input{
+    width: 400px;
+    height: 20px;
+}
+#label{
+    margin: auto;
+    width: 200px;
+    height: 10px;
+    text-align: center;
+}
+#btn{
+    margin: auto;
+    margin-top: -52px;
+    height:25px;
+    width: 230px;
+    
+}
+#btn input{
+    height:25px;
+    width: 105px;
+    float: left;
+    margin:5px;
+}
