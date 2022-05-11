@@ -11,19 +11,27 @@
 </body>
 </html>
 <script>
-    var sinav1 = prompt("birinci sınav notunu giriniz:");
-    var sinav2 = prompt("ikinci sınav notunu giriniz:");
-
+    let sinav1 = parseInt(prompt("birinci sınav notunu giriniz:"));
+    let sinav2 = parseInt(prompt("ikinci sınav notunu giriniz:"));
+    let toplam = 0;
+    let ortalama = 0;
     if(sinav1 > 100 || sinav2 > 100){
         alert("notları kontrol ediniz");
+    }else if(sinav1 < 0 || sinav2 < 0){
+        alert("notları kontrol ediniz");
     }else{
-        var toplam = sinav1 + sinav2;
-        var ortalama = toplam / 2; 
+        toplam = sinav1+sinav2;
+        ortalama = toplam / 2; 
+        console.log(sinav1);
+        console.log(sinav2);
+        console.log(toplam);
+        console.log(ortalama);
 
-        if(ortalama >= 45){
-            document.write("sınavı geçtiniz");
-        }else{
+    
+        if(ortalama < 45){
             document.write("sınavdan kaldınız");
+        }else{
+            document.write("sınavı geçtiniz");
         }
     }
 
