@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>karşılama</title>
+</head>
+<body>
+    <div id="isim">
+
+    </div>
+    <div id="saat">
+
+    </div>
+</body>
+</html>
+<style>
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#isim{
+    margin: auto;
+    font-size: 100px;
+    width: auto;
+    height: 100px;
+    text-align: center;
+}
+#saat{
+    margin: auto;
+    font-size: 100px;
+    width: auto;
+    height: 100px;
+    text-align: center;
+}
+</style>
+<script>
+    const sayi = prompt("ADINIZ SOYADINIZ");
+    document.getElementById("isim").innerHTML = sayi;
+    var tarih=new Date();
+	var yil=tarih.getFullYear();
+	var ay=tarih.getMonth();
+	var gun=tarih.getDay();
+	var saat=tarih.getHours();
+	var dakika=tarih.getMinutes();
+	var saniye=tarih.getSeconds();
+	document.getElementById("saat").innerHTML=gun+"/"+ay+"/"+yil+"<br>"+saat+":"+dakika+":"+saniye;
+// Swal.fire({
+//   title: 'Submit your Github username',
+//   input: 'text',
+//   inputAttributes: {
+//     autocapitalize: 'off'
+//   },
+//   showCancelButton: true,
+//   confirmButtonText: 'Look up',
+//   showLoaderOnConfirm: true,
+//   preConfirm: (login) => {
+//     return fetch(`//api.github.com/users/${login}`)
+//       .then(response => {
+//         if (!response.ok) {
+//           throw new Error(response.statusText)
+//         }
+//         return response.json()
+//       })
+//       .catch(error => {
+//         Swal.showValidationMessage(
+//           `Request failed: ${error}`
+//         )
+//       })
+//   },
+//   allowOutsideClick: () => !Swal.isLoading()
+// }).then((result) => {
+//   if (result.isConfirmed) {
+//     Swal.fire({
+//       title: `${result.value.login}'s avatar`,
+//       imageUrl: result.value.avatar_url
+//     })
+//   }
+// }
+</script>
