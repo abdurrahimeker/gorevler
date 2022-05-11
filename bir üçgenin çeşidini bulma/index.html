@@ -13,17 +13,25 @@
     var kenar1 = prompt("birinci kenar uzunluğunu giriniz:");
     var kenar2 = prompt("ikinci kenar uzunluğunu giriniz:");
     var kenar3 = prompt("üçüncü kenar uzunluğunu giriniz:");
-        
-    if(kenar1 == kenar2 && kenar2 == kenar3) {
-        document.write("eşkenar üçgen");
-    }else if(kenar1 == kenar2){
-        document.write("ikizkenar üçgen");
-    }else if(kenar2 == kenar3){
-        document.write("ikizkenar üçgen");
-    }else if(kenar1 == kenar3){
-        document.write("ikizkenar üçgen");
+    if(kenar1 <= 0 ){
+        document.write("hatalı202");
+    }else if(kenar2 <= 0){
+        document.write("hatalı202");
+    }else if(kenar3 <= 0){
+        document.write("hatalı202");
     }else{
-        document.write("çeşitkenar üçgen");
+        if(kenar1 == kenar2 && kenar2 == kenar3) {
+            document.write("eşkenar üçgen");
+        }else if(kenar1 == kenar2){
+            document.write("ikizkenar üçgen");
+        }else if(kenar2 == kenar3){
+            document.write("ikizkenar üçgen");
+        }else if(kenar1 == kenar3){
+            document.write("ikizkenar üçgen");
+        }else{
+            document.write("çeşitkenar üçgen");
+        }
     }
+
     
 </script>
